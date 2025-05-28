@@ -17,14 +17,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
             background-color: #0f172a;
             color: #e2e8f0;
             line-height: 1.6;
-            scroll-behavior: smooth; /* Плавная прокрутка без JS */
+            scroll-behavior: smooth;
         }
         
         .container {
@@ -127,7 +127,7 @@
         }
         
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             line-height: 1.2;
             margin-bottom: 1.5rem;
             background: linear-gradient(to right, #e2e8f0, #94a3b8);
@@ -137,7 +137,7 @@
         }
         
         .hero-text p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #94a3b8;
             margin-bottom: 2rem;
             max-width: 90%;
@@ -166,32 +166,33 @@
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 1.5rem;
             text-align: center;
         }
         
         .stat-item h3 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: var(--primary);
             margin-bottom: 0.5rem;
         }
         
         .stat-item p {
             color: #94a3b8;
+            font-size: 0.95rem;
         }
         
         /* How It Works */
         .how-it-works {
-            padding: 6rem 0;
+            padding: 5rem 0;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         
         .section-title h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 1rem;
             background: linear-gradient(to right, var(--primary), var(--accent));
             -webkit-background-clip: text;
@@ -204,25 +205,26 @@
             color: #94a3b8;
             max-width: 700px;
             margin: 0 auto;
+            font-size: 1.1rem;
         }
         
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 1.5rem;
         }
         
         .step-card {
             background: #1e293b;
             border-radius: 12px;
-            padding: 2rem;
+            padding: 1.8rem;
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid #334155;
         }
         
         .step-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
             border-color: var(--primary);
         }
         
@@ -236,21 +238,22 @@
             text-align: center;
             line-height: 40px;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
         
         .step-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
         }
         
         .step-card p {
             color: #94a3b8;
+            font-size: 0.95rem;
         }
         
         /* CTA Section */
         .cta {
-            padding: 6rem 0;
+            padding: 5rem 0;
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             text-align: center;
             position: relative;
@@ -276,36 +279,56 @@
         }
         
         .cta h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 1.5rem;
         }
         
         .cta p {
             color: #94a3b8;
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
         
+        .telegram-btn {
+            display: block;
+            background: #0088cc;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 auto;
+            max-width: 500px;
+            transition: all 0.3s;
+        }
+        
+        .telegram-btn:hover {
+            background: #0077b3;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
+        }
+        
         /* Footer */
         footer {
             background: #0d1525;
-            padding: 4rem 0 2rem;
+            padding: 3rem 0 1.5rem;
             border-top: 1px solid #1e293b;
         }
         
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
         }
         
         .footer-col h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
             color: #e2e8f0;
         }
         
@@ -314,13 +337,14 @@
         }
         
         .footer-col ul li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.7rem;
         }
         
         .footer-col ul li a {
             color: #94a3b8;
             text-decoration: none;
             transition: color 0.3s;
+            font-size: 0.9rem;
         }
         
         .footer-col ul li a:hover {
@@ -329,10 +353,10 @@
         
         .copyright {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid #1e293b;
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         /* Responsive */
@@ -363,7 +387,7 @@
             }
             
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .steps, .stats-grid {
@@ -373,17 +397,32 @@
             .footer-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .cta h2 {
+                font-size: 2rem;
+            }
         }
-
-        /* Стиль для сообщения об успешной отправке */
-        .success-message {
-            display: none;
-            background: #10b981;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: center;
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats {
+                padding: 2.5rem 0;
+            }
+            
+            .stat-item h3 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -480,13 +519,11 @@
             <div class="cta-content">
                 <h2>Начните зарабатывать уже сегодня</h2>
                 <p>Получите бесплатный доступ к закрытой базе знаний и инструментам для старта в арбитраже</p>
-                <!-- Заменили форму на ссылку -->
-                <a href="https://t.me/Gensparrow" class="btn" style="width: 100%; padding: 15px; font-size: 1.1rem; display: block; text-align: center;">
+                
+                <!-- Простая кнопка без формы -->
+                <a href="https://t.me/Gensparrow" class="telegram-btn">
                     Получить материалы в Telegram
                 </a>
-                <div class="success-message" id="successMessage">
-                    Доступ к материалам отправлен! Проверьте Telegram.
-                </div>
             </div>
         </div>
     </section>
@@ -504,7 +541,7 @@
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#how-it-works">Как это работает</a></li>
-                        <li><a href="#cta">Начать</a></li>
+                        <li><a href="#cta">Начать сейчас</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
